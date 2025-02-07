@@ -1,4 +1,4 @@
-# GitHub Trending Repositories Client
+# Simple Photo Editor
 
 ## Overview
 
