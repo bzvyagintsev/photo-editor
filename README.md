@@ -9,6 +9,7 @@
 - **Frontend**:
 
   - React
+  - Canvas
   - Vite
   - TypeScript
   - Tailwind CSS
