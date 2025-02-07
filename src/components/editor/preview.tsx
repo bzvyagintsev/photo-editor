@@ -21,16 +21,13 @@ export function Preview() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.filter = 'none';
-    if (settings.filter === FilterType.GRAYSCALE) {
-      ctx.filter = 'grayscale(100%)';
-    } else if (settings.filter === FilterType.SEPIA) {
-      ctx.filter = 'sepia(100%)';
-    }
-
-    if (settings.blur > 0) {
-      ctx.filter += ` blur(${settings.blur}px)`;
-    }
+    ctx.filter = [
+      settings.filter === FilterType.GRAYSCALE && 'grayscale(1)',
+      settings.filter === FilterType.SEPIA && 'sepia(1)',
+      settings.blur && `blur(${settings.blur}px)`,
+    ]
+      .filter(Boolean)
+      .join(' ');
 
     ctx.drawImage(img, 0, 0, settings.width, settings.height);
   }, [settings]);
