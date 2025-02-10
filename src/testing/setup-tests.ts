@@ -1,5 +1,7 @@
 import '@testing-library/jest-dom/vitest';
 
+vi.mock('zustand');
+
 beforeEach(() => {
   const ResizeObserverMock = vi.fn(() => ({
     observe: vi.fn(),

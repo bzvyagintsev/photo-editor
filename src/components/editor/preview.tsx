@@ -58,7 +58,11 @@ export function Preview() {
 
   return (
     <main className="relative col-span-4 overflow-hidden sm:col-span-5">
-      <canvas className="size-full object-contain object-top" ref={canvasRef} />
+      <canvas
+        role="img"
+        className="size-full object-contain object-top"
+        ref={canvasRef}
+      />
       <p className="-mt-8 text-right text-sm text-muted-foreground">
         {settings.width} x {settings.height}
       </p>
