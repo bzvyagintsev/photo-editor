@@ -67,10 +67,11 @@ While the provided image API offers raw images and applies effects server-side, 
 
 - `/src` - Application source code
   - `/api` - Lorem Picsum API integration
-  - `/components` - Reusable UI components
-  - `/hooks` - Custom React hooks
+  - `/components/editor` - Editor components
+  - `/hooks` - Custom hooks
   - `/lib` - Utility functions and configurations
   - `/stores` - Zustand state stores
+  - `/testing` - Test framework
   - `/types` - TypeScript type definitions
 
 ## API Documentation
